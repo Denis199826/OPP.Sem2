@@ -35,7 +35,7 @@ public class VeterinaryClinic {
         List<Animals> goable = new ArrayList<>();
         for (Animals animals : anim) {
             if (animals instanceof Goable) {
-                ((Flyable) animals).fly();
+                ((Goable) animals).fly();
             }
         }
         return goable;
@@ -44,7 +44,7 @@ public class VeterinaryClinic {
         List<Animals> swimable = new ArrayList<>();
         for (Animals animals : anim) {
             if (animals instanceof Swimable) {
-                ((Flyable) animals).fly();
+                ((Swimable) animals).fly();
             }
         }
         return swimable;
